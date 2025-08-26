@@ -127,6 +127,9 @@ nav:
   - Mathematics:
     - "Basic Calculus": Mathematics/Calculus1.md
 
+  - MATLAB:
+    - "Basic": MATLAB/Basic.md
+
 
     
     
