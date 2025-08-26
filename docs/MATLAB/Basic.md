@@ -1,4 +1,7 @@
-# MATLAB
+# MATLAB Notes (Basic)
 
-This is my introductory notes for how to use MATLAB
+Welcome to my introductory notes on using **MATLAB**.  
+These notes summarizes the key concepts, syntax, and examples for quick reference.  
+
+
 
