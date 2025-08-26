@@ -14,7 +14,6 @@ Multiply the numbers **3** and **5** using MATLAB.
 
 ??? success "💡 Show Solution"
     ```matlab
-    % Multiply 3 and 5
     result = 3 * 5;
     disp(result);   % Output: 15
     ```
@@ -33,7 +32,6 @@ Create a variable named **A** with the value `-2`.
 
 ??? success "💡 Show Solution"
     ```matlab
-    % Create variable A
     A = -2;
     ```
 
@@ -62,11 +60,9 @@ Store the result in a variable named **meanAa**.
 
 ??? success "💡 Show Solution"
     ```matlab
-    % Example variables
     a = 10;
     A = -2;
 
-    % Calculate mean
     meanAa = (a + A) / 2;
 
     disp(meanAa);   % Output: 4
