@@ -27,7 +27,7 @@ You can name your MATLAB variables anything you'd like as long as they:
 - Start with a **letter**
 - Contain only **letters, numbers, and underscores (`_`)**
 
-### Task  
+
 Create a variable named **A** with the value `-2`.
 
 ??? success "💡 Show Solution"
