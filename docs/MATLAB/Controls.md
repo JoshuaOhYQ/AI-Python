@@ -5,12 +5,19 @@ These notes summarizes the key concepts, syntax, and examples for quick referenc
 *This module requires* **Control System Toolbox** *to be installed in MATLAB*. 
 
 
-## 
+## Creating Transfer Functions
 
-Multiply the numbers **3** and **5** using MATLAB.
+To create, we need to declare the numerator and denominator polynomials by creating two vectors (arrays) `num` and `den`. The number of elements in the array tells the degree of the polynomials:
 
 ```matlab
-3 * 5
+den = [2] %refers to den(s) = 2
+den = [3 2] %refers to den(s) = 3s + 2
+den = [5 3 7] %refers to den(s) = 5s<sup>2</sup> + 3s + 7
+den = [3] %refers to den(s) = 3
+den = [2 0] %refers to den(s) = 2s + 0 = 2s
+
+
+
 ```
 
 ??? success "💡 Show Solution"
