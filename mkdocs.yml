@@ -129,6 +129,7 @@ nav:
 
   - MATLAB:
     - "Basic": MATLAB/Basic.md
+    - "Control Systems": MATLAB/Controls.md
 
 
     
