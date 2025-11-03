@@ -1,6 +1,6 @@
 # MATLAB Notes (Basic-Onramp)
 
-Welcome to my introductory notes on using **MATLAB**.  
+Welcome to **Control Systems** using **MATLAB**.  
 These notes summarizes the key concepts, syntax, and examples for quick reference.  
 
 
