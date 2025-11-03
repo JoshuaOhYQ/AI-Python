@@ -2,9 +2,10 @@
 
 Welcome to **Control Systems** using **MATLAB**.  
 These notes summarizes the key concepts, syntax, and examples for quick reference.  
+*This module requires* **Control System Toolbox** *to be installed in MATLAB*. 
 
 
-## Exercise 1: Multiplying Numbers
+## 
 
 Multiply the numbers **3** and **5** using MATLAB.
 
