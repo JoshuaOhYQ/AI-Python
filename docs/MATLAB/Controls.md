@@ -53,5 +53,20 @@ step (G, stepDataOptions('InputOffSet',0,'StepAmplitude',A))
 
 Once the graph is plotted, we can **right-click > Characteristics** to find out about the transient and steady-state information. 
 
-
 ---
+
+## Computing and Plotting of Poles and Zeros
+
+In order to compute and plot the poles and zeros of the transfer function, we can use the function `pzmap()` followed by `pzplot()` which plots the poles and zeros in s-plane and `sgrid` which shows the s-plane grid. If there are no zeros or poles found, then the value is empty. 
+
+```matlab
+[poles,zeros]=pzmap(G)
+pzplot(G) %plot the poles and zeros in s-plane
+sgrid %show s-plane grid
+```
+![Poles and Zeros](MATLAB/controlsp/poleszeros.png)
+
+
+
+
+
