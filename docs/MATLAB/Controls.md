@@ -65,11 +65,15 @@ pzplot(G) %plot the poles and zeros in s-plane
 sgrid %show s-plane grid
 ```
 <p align="center">
-  <img src="MATLAB/controlsp/poleszeros.png" alt="Poles and Zeros" width="400">
+  <img src="MATLAB/controlsp/poleszeros.png?raw=true" alt="Poles and Zeros" width="400">
 </p>
 
 
-Looking at the figure generated, the radial lines (0.997, 0.99, 0.974, 0.945,…) signify the lines of different damping ratio ζ values. Basically, these lines represent (ζ = 0.997, ζ  = 0.99, ζ  = 0.974, ζ = 0.945,…). At the negative horizontal axis, ζ ≥ 1.0 (overdamped) and at the vertical axis, ζ = 0 (undamped). The circular lines (radius 1, 2, 3, 4,…) show the different values of natural frequency ω<sub>n</sub> .
+- Looking at the figure generated, the radial lines (0.997, 0.99, 0.974, 0.945,…) signify the lines of different damping ratio ζ values.Basically, these lines represent (ζ = 0.997, ζ  = 0.99, ζ  = 0.974, ζ = 0.945,…). 
+
+- At the negative horizontal axis, ζ ≥ 1.0 (overdamped) and at the vertical axis, ζ = 0 (undamped). 
+
+- The circular lines (radius 1, 2, 3, 4,…) show the different values of natural frequency ω<sub>n</sub> .
 
 
 
