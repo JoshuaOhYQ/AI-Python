@@ -75,6 +75,24 @@ sgrid
 
 - The circular lines (radius 1, 2, 3, 4,…) show the different values of natural frequency ω<sub>n</sub> .
 
+## Simplification of Transfer Functions
+
+Two or more transfer functions in series can be reduced to be one transfer function by finding the product in MATLAB. For example, if we have $G_{1}(s) = \dfrac{2}{(s+2)}$ and $G_{2}(s) = \dfrac{5}{(s+3)}$, we can compute the simplified transfer function as $G_{total}(s) = G_{1}(s)\, G_{2}(s)$ :
+
+```matlab
+num = [2]
+den = [1 2] 
+G_1 = tf(num,den) 
+num = [5]
+den = [1 3] 
+G_2 = tf(num,den) 
+G_total = G_1*G_2 
+```
+
+
+
+
+
 
 
 
