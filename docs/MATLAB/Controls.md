@@ -97,6 +97,16 @@ We can analyze a feedback (closed-loop) control system in MATLAB by using the `f
   <img src="https://github.com/JoshuaOhYQ/AI-Python/blob/main/docs/MATLAB/controlsp/Closed-loop.png?raw=true" alt="Closed-loop" width="500">
 </p>
 
+In this case, we can create two transfer functions G(s) and H(s). For example, if we have $G(s) = \dfrac{3}{(s+2)(s+5)}$ and $H(s) = \dfrac{1}{(0.2s + 1)}$ :
+
+```matlab
+num = [1]
+den = [0.2 1] 
+H = tf(num,den) 
+T = feedback(G,H) 
+```
+
+The unit step response of this closed-loop transfer function T(s) can be found by using `step(T)`.
 
 
 
