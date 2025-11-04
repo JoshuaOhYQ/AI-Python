@@ -94,7 +94,7 @@ G_total = G_1*G_2
 We can analyze a feedback (closed-loop) control system in MATLAB by using the `feedback()` function. For instance, consider the followng closed-loop system:
 
 <p align="center">
-  <img src="https://github.com/JoshuaOhYQ/AI-Python/blob/1459ec828483e143ffc1a8e7f33a4332543a093a/docs/MATLAB/controlsp/poleszeros.png?raw=true" alt="Poles and Zeros" width="1000">
+  <img src="https://github.com/JoshuaOhYQ/AI-Python/blob/main/docs/MATLAB/controlsp/Closed-loop.png?raw=true" alt="Closed-loop" width="500">
 </p>
 
 
