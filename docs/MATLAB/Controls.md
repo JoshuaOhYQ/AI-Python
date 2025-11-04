@@ -25,22 +25,27 @@ $$
 
 
 ```matlab
-num = [3]
+num = [3] 
 den = [1 7 10]
 G = tf(num,den)
 ```
 
 ---
 
-## Exercise 2: Creating Variables
+## Generating Step Response
 
-You can name your MATLAB variables anything you'd like as long as they:
+To generate a step response of the transfer function, you may use the `step()` function, for instance running `step(G)` will produce the unit step response of transfer Function G(s). The `figure()` function will generate the graph after the unit step response has been applied to the transfer function. 
 
-- Start with a **letter**
-- Contain only **letters, numbers, and underscores (`_`)**
+```matlab
+figure(1) 
+step(G)
+```
+We can also generate step response for different step amplitude, for example your step input has a magnitude of A=2. 
 
 
-Create a variable named **A** with the value `-2`.
+
+
+
 
 ??? success "💡 Show Solution"
     ```matlab
