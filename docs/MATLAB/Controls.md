@@ -108,8 +108,19 @@ T = feedback(G,H)
 
 The unit step response of this closed-loop transfer function T(s) can be found by using `step(T)`.
 
+## Bode plot of a transfer function (frequency response)
 
+The bode plot of a transfer function can be done by using the function `bode()`. This is usually followed by `margin()` which shows the phase margin and gain margin in the Bode plot. The function `nyquist()` will plot the Nyquist plot of the plant. 
 
+```matlab
+figure(5) 
+bode(G) 
+margin(G) 
+grid on 
+figure(6) 
+nyquist(G)  
+grid on    
+```
 
 
 
