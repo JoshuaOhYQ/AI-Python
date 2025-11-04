@@ -40,16 +40,18 @@ To generate a step response of the transfer function, you may use the `step()` f
 figure(1) 
 step(G)
 ```
-We can also generate step response for different step amplitude, for example your step input has a magnitude of A=2. 
 
+We can also generate step response for different step amplitude, for example your step input has a magnitude of A=2. This is done by setting the `stepDataOptions`, there are two parameters there, one being `StepAmplitude` and the other being `InputOffset`. `InputOffset` determines the **initial value of the step response**. By default, if ` stepDataOptions` are not set, the `stepAmplitude` is 1 and `InputOffSet` is 0. 
 
+So, in order to generate the step response of G(s) for input amplitude of A=2 and input offset of 0:
 
+```matlab
+A = 2 
+figure(2)
+step (G, stepDataOptions('InputOffSet',0,'StepAmplitude',A))
+```
 
+Once the graph is plotted, we can **right-click > Characteristics** to find out about the transient and steady-state information. 
 
-
-??? success "💡 Show Solution"
-    ```matlab
-    A = -2;
-    ```
 
 ---
