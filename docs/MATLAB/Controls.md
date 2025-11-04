@@ -65,7 +65,7 @@ pzplot(G) %plot the poles and zeros in s-plane
 sgrid %show s-plane grid
 ```
 <p align="center">
-  <img src="https://github.com/JoshuaOhYQ/AI-Python/blob/1459ec828483e143ffc1a8e7f33a4332543a093a/docs/MATLAB/controlsp/poleszeros.png?raw=true" alt="Poles and Zeros" width="400">
+  <img src="https://github.com/JoshuaOhYQ/AI-Python/blob/1459ec828483e143ffc1a8e7f33a4332543a093a/docs/MATLAB/controlsp/poleszeros.png?raw=true" alt="Poles and Zeros" width="1000">
 </p>
 
 
