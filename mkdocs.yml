@@ -131,6 +131,9 @@ nav:
     - "Basic": MATLAB/Basic.md
     - "Control Systems": MATLAB/Controls.md
 
+  - TKinter (Python Library):
+    - "Basic": TKinter/Main.md
+    - "Project 1": TKinter/Project1.md
 
     
     
