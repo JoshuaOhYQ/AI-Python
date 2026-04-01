@@ -55,7 +55,7 @@ Think of your window as a spreadsheet or a coordinate system:
     root.mainloop()
     ```
 
-**Key Rules!:**
+**Key Rule:**
 
 If you put something in row=0 and something else in row=5, but rows 1-4 are empty, Tkinter will collapse the empty space. It will look the same as putting them in rows 0 and 1.
 
