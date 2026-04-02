@@ -166,7 +166,7 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 - ```.get()```: This is the most important method. It returns whatever string is currently typed into the box.
 - ```.insert(index, string)```: Used to put text into the box programmatically. ```0``` is the start, and ```END``` is a special constant to put text at the very end.
 
-- ```.delete(first, last)```: Removes text. To clear the entire box, use ```e.delete(0, END)```. In the example above, the user has to manually delete the text before typing, hence to automatically clear the box, you can use this.
+- ```.delete(first, last)```: Removes text. To clear the entire box, use ```e.delete(0, END)```. 
 
 
 **Other ```Entry()``` Arguments:**
