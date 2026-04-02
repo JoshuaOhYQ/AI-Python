@@ -129,6 +129,55 @@ Buttons are the primary way users interact with your GUI. In Tkinter, a button c
     command=lambda: myClick("Argument").
     ```
 
+## Input Fields (Entry Widget)
 
+The ```Entry``` widget is the standard way to accept single-line text input from a user. Whether you are building a login form or a calculator, the ```Entry``` widget is your go-to tool for capturing data.
+
+!!! example 
+
+    ```py linenums="1"
+    from tkinter import *
+
+    root = Tk() 
+    root.title("Handling User Input")
+
+    # 1. Create the Entry widget
+    e = Entry(root, width=50, bg="blue", fg="white", borderwidth=5)
+    e.pack()
+
+    # 2. Add default text (Optional)
+    # 0 is the index (the very beginning of the box)
+    e.insert(0, "Enter Your Name: ")
+
+    def myClick():
+        # 3. Use .get() to retrieve the current text
+        hello = "Hello " + e.get()
+        myLabel = Label(root, text=hello)
+        myLabel.pack()
+
+    myButton = Button(root, text="Submit Name", command=myClick)
+    myButton.pack()
+
+    root.mainloop()
+    ```
+
+**Essential Methods:**
+
+- ```.get()```: This is the most important method. It returns whatever string is currently typed into the box.
+- ```.insert(index, string)```: Used to put text into the box programmatically. ```0``` is the start, and ```END``` is a special constant to put text at the very end.
+
+- ```.delete(first, last)```: Removes text. To clear the entire box, use ```e.delete(0, END)```.
+
+
+**Other ```Entry()``` Arguments:**
+| Argument | Description | Example |
+|----------|-------------|---------|
+| `width` | Sets the width in **character units** (not pixels). | `width=30` |
+| `fg / bg` | Sets the text color (**Foreground**) and the box color (**Background**). | `fg="black", bg="#eeeeee"` |
+| `borderwidth` | Defines the thickness of the border around the entry box. | `borderwidth=5` |
+| `show` | Replaces visible characters with a specific symbol. **Crucial for passwords.** | `show="*"` |
+| `font` | Changes the typeface and size of the input text. | `font=("Arial", 14)` |
+| `justify` | Aligns the text inside the box. Options: `LEFT`, `CENTER`, or `RIGHT`. | `justify=CENTER` |
+| `state` | Can be `NORMAL`, `DISABLED`, or `READONLY`. | `state="readonly"` |
 
 
