@@ -99,18 +99,18 @@ Buttons are the primary way users interact with your GUI. In Tkinter, a button c
 
 1. ```state``` parameter determines if a user can actually interact with the button:
 
-- ```state=NORMAL```: The default state. The button is clickable.
-- ```state=DISABLED```: The button is greyed out and cannot be clicked.
+```state=NORMAL```: The default state. The button is clickable.
+```state=DISABLED```: The button is greyed out and cannot be clicked.
 
 2. Padding controls the "breathing room" around the text inside the button or changes the size of the button relative to its content:
 
-- ```padx```: Horizontal padding. It adds space to the left and right of the button text.
-- ```pady```: Vertical padding. It adds space to the top and bottom of the button text.
+```padx```: Horizontal padding. It adds space to the left and right of the button text.
+```pady```: Vertical padding. It adds space to the top and bottom of the button text.
 
 3. Colour Styling using simple string names for colors, or Hex codes:
 
-- ```fg``` (Foreground): Changes the color of the text.
-- ```bg``` (Background): Changes the color of the button face.
+```fg``` (Foreground): Changes the color of the text.
+```bg``` (Background): Changes the color of the button face.
 
 
 !!! Warning
