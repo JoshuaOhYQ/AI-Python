@@ -170,6 +170,7 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 
 
 **Other ```Entry()``` Arguments:**
+
 | Argument | Description | Example |
 |----------|-------------|---------|
 | `width` | Sets the width in **character units** (not pixels). | `width=30` |
