@@ -43,7 +43,7 @@ Think of your window as a spreadsheet or a coordinate system:
 
     # 1. Creating Label Widgets
     mylabel1 = Label(root, text="Hello World")
-    mylabel2 = Label(root, text="RKO")
+    mylabel2 = Label(root, text="My name is John")
 
     # 2. Placing them on the screen using the Grid System
     # row=0, column=0 is the top-left corner
