@@ -97,7 +97,7 @@ Buttons are the primary way users interact with your GUI. In Tkinter, a button c
 
 **Important Arguments:**
 
-```state``` 
+**State**
 
 - parameter determines if a user can actually interact with the button
 - ```state=NORMAL```: The default state. The button is clickable.
