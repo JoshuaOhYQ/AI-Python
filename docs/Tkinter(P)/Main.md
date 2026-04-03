@@ -197,7 +197,7 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 
 !!! Question 
 
-    Try to create a basic calculator program that will enable the user to calculate basic arithmetic operations which include +, -, * and / . 
+    Try to create a basic calculator program that will enable the user to calculate basic arithmetic operations which include + , - , * and / . 
 
     Sample Code: [Project 1: Basic Calculator Program](https://joshuaohyq.github.io/AI-Python/Tkinter%28P%29/Project1/)
 
