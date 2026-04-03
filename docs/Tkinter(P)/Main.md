@@ -195,6 +195,8 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 
 4. Clear the box using ```.delete(0, END)``` if you want to reset the form.
 
+## CheckPoint
+
 !!! Question 
 
     Try to create a basic calculator program that will enable the user to calculate basic arithmetic operations which include + , - , * and / . 
