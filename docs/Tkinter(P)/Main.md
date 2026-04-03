@@ -195,7 +195,7 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 
 4. Clear the box using ```.delete(0, END)``` if you want to reset the form.
 
-## CheckPoint
+## CheckPoint 1
 
 !!! Question 
 
