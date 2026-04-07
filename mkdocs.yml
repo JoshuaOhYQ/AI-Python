@@ -124,18 +124,12 @@ nav:
     - "Fuzzy Logic and Fuzzy Inference Systems": Chapter2.md
     - "Genetic Algorithm": Chapter3.md
   
-  - Mathematics:
-    - "Basic Calculus": Mathematics/Calculus1.md
-
-  - MATLAB:
-    - "Basic": MATLAB/Basic.md
-    - "Control Systems": MATLAB/Controls.md
-
   - Tkinter (Python Library):
     - "Basic": Tkinter(P)/Main.md
     - "Project 1": Tkinter(P)/Project1.md
 
-    
+  - Research Analysis:
+    - "Algorithms on Chest Game": Research/Chest.md
     
     
 

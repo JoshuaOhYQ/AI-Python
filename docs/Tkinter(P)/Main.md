@@ -203,5 +203,14 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 
     Sample Code: [Project 1: Basic Calculator Program](https://joshuaohyq.github.io/AI-Python/Tkinter%28P%29/Project1/)
 
+## Icons, Images, and Exits Buttons
+
+
+
+
+
+
+
+
 
 
