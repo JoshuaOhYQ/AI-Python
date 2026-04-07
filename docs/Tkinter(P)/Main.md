@@ -204,12 +204,53 @@ The ```Entry``` widget is the standard way to accept single-line text input from
     Sample Code: [Project 1: Basic Calculator Program](https://joshuaohyq.github.io/AI-Python/Tkinter%28P%29/Project1/)
 
 ## Icons, Images, and Exits Buttons
+In this section, we break down how to customize your window's appearance and add a clean way for users to close the application. 
+
+1. Windows Icons (```iconbitmap```):
+
+```root.iconbitmap("bin.ico")``` changes the default feather icon in the top-left corner of the window. This function only specifically looks for a ```.ico``` file on Windows, so if a PNG or JPG is used, there will most likely be an error. 
+
+2. Handling Images (```PIL``` + ```Label```):
+
+Standard Tkinter has limited support for images (mostly GIFs and Pngs). By using the Pillow (PIL) library, you can open almost any format (like your ```.jpeg```). So the process is:
+
+- ```Image.open("Logo.jpeg")```: Opens the file.
+
+- ```ImageTk.PhotoImage(...)```: Converts that file into a format Tkinter can actually "read."
+
+- ```Label(image=my_img)```: In Tkinter, images can't just float in the window; they must be placed inside a widget, usually a Label.
+
+3. The Exit Button (root.destroy):
+
+While every window has an "X" in the corner, adding a dedicated button is better for user experience. The ```command=root.destroy``` tells Python to stop the main loop and close all associated windows immediately.
 
 
+!!! example
 
+    ```py linenums="1"
+    from tkinter import *
+    from PIL import ImageTk,Image
 
+    root = Tk()
+    root.title("Learning")
+    # 1. Set the window icon
+    root.iconbitmap("bin.ico")
 
+    # 2. Define and display the image
+    my_img = ImageTk.PhotoImage(Image.open("Logo.jpeg"))
+    my_label = Label(image=my_img)
+    my_label.pack()
 
+    # 3. Create a functional Exit button
+    button_quit = Button(root, text="Exit Program", command=root.destroy)
+    button_quit.pack()
+
+    root.mainloop()
+    ```
+
+!!! Info
+
+    Unlike ```root.quit()```, which simply stops the main loop but might leave the window hanging in some environments, ```root.destroy()``` explicitly kills the widgets and exits the program cleanly.
 
 
 
