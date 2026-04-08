@@ -206,11 +206,11 @@ The ```Entry``` widget is the standard way to accept single-line text input from
 ## Icons, Images, and Exits Buttons
 In this section, we break down how to customize your window's appearance and add a clean way for users to close the application. 
 
-1. Windows Icons (```iconbitmap```):
+**Windows Icons (```iconbitmap```):**
 
 ```root.iconbitmap("bin.ico")``` changes the default feather icon in the top-left corner of the window. This function only specifically looks for a ```.ico``` file on Windows, so if a PNG or JPG is used, there will most likely be an error. 
 
-2. Handling Images (```PIL``` + ```Label```):
+**Handling Images (```PIL``` + ```Label```):**
 
 Standard Tkinter has limited support for images (mostly GIFs and Pngs). By using the Pillow (PIL) library, you can open almost any format (like your ```.jpeg```). So the process is:
 
@@ -220,7 +220,7 @@ Standard Tkinter has limited support for images (mostly GIFs and Pngs). By using
 
 - ```Label(image=my_img)```: In Tkinter, images can't just float in the window; they must be placed inside a widget, usually a Label.
 
-3. The Exit Button (root.destroy):
+**The Exit Button (root.destroy):**
 
 While every window has an "X" in the corner, adding a dedicated button is better for user experience. The ```command=root.destroy``` tells Python to stop the main loop and close all associated windows immediately.
 
