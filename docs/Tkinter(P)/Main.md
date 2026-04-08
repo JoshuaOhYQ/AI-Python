@@ -220,7 +220,7 @@ Standard Tkinter has limited support for images (mostly GIFs and Pngs). By using
 
 - ```Label(image=my_img)```: In Tkinter, images can't just float in the window; they must be placed inside a widget, usually a Label.
 
-**The Exit Button (root.destroy):**
+**The Exit Button (```root.destroy```):**
 
 While every window has an "X" in the corner, adding a dedicated button is better for user experience. The ```command=root.destroy``` tells Python to stop the main loop and close all associated windows immediately.
 
