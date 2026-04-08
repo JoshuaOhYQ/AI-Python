@@ -257,7 +257,7 @@ While every window has an "X" in the corner, adding a dedicated button is better
 
 !!! Question 
 
-    Try to create a image viewer app that can view 5 images with buttons for viewing the next and previous image. The program should also include an exit button for the user to exit out of the app.  
+    Try to create a image viewer app that can view 5 images with buttons for viewing the next and previous image. The program should also include an exit button for the user to exit out of the app and a status bar to see which image is the user currently on.  
 
     Sample Code: [Project 2: Image Viewer Program](https://joshuaohyq.github.io/AI-Python/Tkinter%28P%29/Project2/)
 
