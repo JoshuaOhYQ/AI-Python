@@ -127,6 +127,7 @@ nav:
   - Tkinter (Python Library):
     - "Basic": Tkinter(P)/Main.md
     - "Project 1": Tkinter(P)/Project1.md
+    - "Project 2": Tkinter(P)/Project2.md
 
   - Research Analysis:
     - "Algorithms on Chest Game": Research/Chest.md
