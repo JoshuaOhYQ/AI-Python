@@ -261,4 +261,73 @@ While every window has an "X" in the corner, adding a dedicated button is better
 
     Sample Code: [Project 2: Image Viewer Program](https://joshuaohyq.github.io/AI-Python/Tkinter%28P%29/Project2/)
 
+## Frames
+Frames are essential organizational tools in Tkinter. Think of a Frame (or a **LabelFrame**) as a physical box or a "sub-window" within your main window. They allow you to group related widgets together, making your layout cleaner and much easier to manage.
+
+
+!!! example
+
+    ```py linenums="1"
+    from tkinter import *
+    from PIL import ImageTk, Image
+
+    root = Tk()
+    root.title("Learning")
+    root.iconbitmap("Pic.ico")
+
+    # 1. Define the LabelFrame
+    # text: The title of the frame
+    # padx/pady: Internal padding (space inside the frame around the buttons)
+    frame = LabelFrame(root, text="This is my Frame...", padx=100, pady=100)
+
+    # 2. Place the frame on the window
+    # padx/pady: External padding (space outside the frame, between the frame and window edge)
+    frame.pack(padx=100, pady=100)
+
+    # 3. Define buttons INSIDE the frame
+    # Note: Instead of 'root', we use 'frame' as the first argument
+    b = Button(frame, text="Don't Click Here!")
+    b2 = Button(frame, text="Click Me!")
+
+    # 4. Use Grid inside the Frame
+    # Even though the frame is 'packed', widgets inside it can use 'grid'
+    b.grid(row=0, column=0)
+    b2.grid(row=1, column=1)
+
+    root.mainloop()
+    ```
+
+**Frame Customization Parameters**
+
+**Spacing and Pading:**
+
+- ```padx``` and ```pady``` **(Inside the constructor):** This is **internal padding**. It adds space between the border of the frame and the widgets placed inside it.
+- ```.pack(padx=..., pady=...)``` **(The geometry manager):** This is **external padding**. It adds space between the frame itself and the edges of the main window or neighboring widgets.
+
+**Visual Style:**
+
+| **Parameter** | **Description** |
+|---------------|-----------------|
+| `text` | (Specific to `LabelFrame`) Sets the label that appears on the top border of the frame. |
+| `borderwidth` (or `bd`) | Sets the thickness of the frame's border (e.g., `bd=5`). |
+| `relief` | Defines the 3D border style. Options include `SUNKEN`, `RAISED`, `GROOVE`, `RIDGE`, and `FLAT`. |
+| `bg` (background) | Changes the color of the frame's interior (e.g., `bg="blue"`). |
+
+
+**Sizing:**
+
+- **```width``` and ```height```:** You can manually set the size of a frame in pixels.
+- By default, a frame will shrink to fit the widgets inside it. If you want it to stay a specific size, you usually have to use ```frame.pack_propagate(False)```
+
+
+!!! Notes
+    One of the most powerful reasons to use Frames is that they act as **layout boundaries**.
+
+    In Tkinter, you generally cannot mix ```.pack()``` and ```.grid()``` in the same window—it will cause the program to freeze. However, because a Frame is its own container, you can pack the Frame into the main window and then use **grid** to organize the buttons inside that frame.
+
+    This gives you the flexibility of the Grid system without breaking the simplicity of the Pack system for the rest of your app!
+
+
+
+
 
