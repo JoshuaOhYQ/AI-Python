@@ -328,6 +328,76 @@ Frames are essential organizational tools in Tkinter. Think of a Frame (or a **L
     This gives you the flexibility of the Grid system without breaking the simplicity of the Pack system for the rest of your app!
 
 
+## Radio Buttons 
+Radio buttons are a GUI staple used when you want to allow a user to select exactly one option from a set of mutually exclusive choices. In Tkinter, the "magic" that links these buttons together is a shared variable.
+
+!!! example 
+
+    ```py linenums="1"
+    from tkinter import *
+    from PIL import ImageTk, Image
+
+    root = Tk()
+    root.title("Learning")
+    root.iconbitmap("Pic.ico")
+
+    # Define the data: A list of tuples containing (Display Text, Internal Value)
+    MODES = [
+        ("Pepperoni", "Pepperoni"), 
+        ("Cheese", "Cheese"),
+        ("Mushroom", "Mushroom"),
+        ("Chicken", "Chicken") 
+    ]
+
+    # Define the shared Tkinter variable. 
+    # It must be a StringVar because our 'value' entries are strings.
+    pizza = StringVar()
+    pizza.set("Pepperoni") # Sets the default selection
+
+    # THE LOOP: This iterates through the tuples and creates a button for each
+    for text, topping in MODES:
+        # 'variable=pizza' links all these buttons together as a single group
+        Radiobutton(root, text=text, variable=pizza, value=topping).pack(anchor=W)
+
+    def clicked(value):
+        """Displays the currently selected value in a new Label."""
+        myLabel = Label(root, text=value)
+        myLabel.pack()
+
+    # The button triggers the function using the current value of the 'pizza' variable
+    myButton = Button(root, text="Click me!", command=lambda: clicked(pizza.get()))
+    myButton.pack()
+
+    root.mainloop()
+    ```
+
+**Tuples and Loops vs. Individual Declaration**
+
+If you had 10 pizza toppings, you would have to write 10 lines of code like this:
+
+```py 
+Radiobutton(root, text="Pepperoni", variable=pizza, value="Pepperoni").pack()
+Radiobutton(root, text="Cheese", variable=pizza, value="Cheese").pack()
+# ... and so on 8 more times.
+```
+
+This is repetitive, prone to typos, and difficult to maintain if you decide to change a font or padding later.
+
+Hence, we can do it smarter by defining a list of tuples, where you can **separate your data from your logic**. So, for example if you want to add a "Veggie" topping, you just add one tuple to the list. The loop handles the rest.
+
+**Key Parameters for Radio Buttons**
+
+| Parameter | Description |
+|----------|-------------|
+| `root` | The parent container (Window or Frame) where the button will live. |
+| `text` | The string that the user actually sees next to the button. |
+| `variable` | **Crucial:** This is the Tkinter variable (`IntVar` or `StringVar`) that all buttons in a group must share. This is what makes them "know" only one can be selected at a time. |
+| `value` | The specific value that gets stored in the `variable` when this particular button is clicked. |
+| `command` | (Optional) A function to call every time the user clicks the button. |
+| `anchor` | Used in `.pack(anchor=W)` to align the buttons. `W` stands for West (left-aligned). |
 
 
+!!! tips
+
+    In Tkinter, standard Python variables (like ```x = 5```) won't work for tracking widget states because they don't "alert" the GUI when they change. Always use ```IntVar()```, ```StringVar()```, or ```BooleanVar()``` when working with Radio buttons so the interface stays responsive to user clicks!
 
