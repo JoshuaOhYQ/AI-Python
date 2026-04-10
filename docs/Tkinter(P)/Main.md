@@ -397,7 +397,7 @@ Hence, we can do it smarter by defining a list of tuples, where you can **separa
 | `anchor` | Used in `.pack(anchor=W)` to align the buttons. `W` stands for West (left-aligned). |
 
 
-!!! tips
+!!! Tip
 
     In Tkinter, standard Python variables (like ```x = 5```) won't work for tracking widget states because they don't "alert" the GUI when they change. Always use ```IntVar()```, ```StringVar()```, or ```BooleanVar()``` when working with Radio buttons so the interface stays responsive to user clicks!
 
