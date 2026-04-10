@@ -371,7 +371,7 @@ Radio buttons are a GUI staple used when you want to allow a user to select exac
     root.mainloop()
     ```
 
-**Tuples and Loops vs. Individual Declaration**
+**Tuples and Loops vs. Individual Declaration:**
 
 If you had 10 pizza toppings, you would have to write 10 lines of code like this:
 
@@ -385,7 +385,7 @@ This is repetitive, prone to typos, and difficult to maintain if you decide to c
 
 Hence, we can do it smarter by defining a list of tuples, where you can **separate your data from your logic**. So, for example if you want to add a "Veggie" topping, you just add one tuple to the list. The loop handles the rest.
 
-**Key Parameters for Radio Buttons**
+**Key Parameters for Radio Buttons:**
 
 | Parameter | Description |
 |----------|-------------|
