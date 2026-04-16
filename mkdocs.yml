@@ -129,6 +129,9 @@ nav:
     - "Project 1": Tkinter(P)/Project1.md
     - "Project 2": Tkinter(P)/Project2.md
 
+  - Pytorch:
+    - "Array vs Tensors": Pytorch/Array.md
+
   - Research Analysis:
     - "Algorithms on Chest Game": Research/Chest.md
     
