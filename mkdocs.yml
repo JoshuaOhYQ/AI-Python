@@ -132,6 +132,7 @@ nav:
   - Pytorch:
     - "Array vs Tensors": Pytorch/Array.md
     - "Reshape and Slicing": Pytorch/Reshape.md
+    - "Tensor Math Operations": Pytorch/Math.md
 
   - Research Analysis:
     - "Algorithms on Chest Game": Research/Chest.md
