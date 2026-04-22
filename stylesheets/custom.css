@@ -1,0 +1,10 @@
+/* Apply background ONLY to the homepage (index.md) */
+[data-md-page="index"] {
+    background: url("https://raw.githubusercontent.com/JoshuaOhYQ/AI-Python/main/docs/background/image.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Ensure other pages have the default background */
+[data-md-page]:not([data-md-page="index"]) {
+    background: none;
+}
