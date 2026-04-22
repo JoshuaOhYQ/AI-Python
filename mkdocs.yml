@@ -133,6 +133,7 @@ nav:
     - "Array vs Tensors": Pytorch/Array.md
     - "Reshape and Slicing": Pytorch/Reshape.md
     - "Tensor Math Operations": Pytorch/Math.md
+    - "Basic Neural Network Model": Pytorch/BasicN.md
 
   - Research Analysis:
     - "Algorithms on Chest Game": Research/Chest.md
